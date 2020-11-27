@@ -1,9 +1,9 @@
 package calculator
 
 class FluentCalculator {
-  var value = 0
-  var operations: Seq[Operation] = Seq()
-  var undone: Seq[Operation] = Seq()
+  private var value = 0
+  private var operations: Seq[Operation] = Seq()
+  private var undone: Seq[Operation] = Seq()
 
   def calc(initial: Int): FluentCalculator = {
     value = initial
