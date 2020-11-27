@@ -52,8 +52,6 @@ class FluentCalculator {
 }
 
 object FluentCalculator {
-
   import scala.language.implicitConversions
-
   implicit def calcToInt(calculator: FluentCalculator): Int = calculator.processPendingOperations()
 }
